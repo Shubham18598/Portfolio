@@ -15,6 +15,7 @@ const Navbar = () => {
       const handleScroll = () => {
         const header = document.querySelector('header');
         header.classList.toggle('shadow', window.scrollY > 0);
+        setIsActive(false); // Close the navbar when scrolling
       };
   
       window.addEventListener('scroll', handleScroll);
