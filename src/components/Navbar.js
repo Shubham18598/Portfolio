@@ -1,5 +1,8 @@
 import React,{ SVGProps, useEffect, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
+import Resume from "../images/Shubham_Muddamwar_Resume.pdf"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -12,7 +15,6 @@ const Navbar = () => {
       const handleScroll = () => {
         const header = document.querySelector('header');
         header.classList.toggle('shadow', window.scrollY > 0);
-        setIsActive(false); // Close the navbar when scrolling
       };
   
       window.addEventListener('scroll', handleScroll);
@@ -33,8 +35,7 @@ const Navbar = () => {
         <li><NavLink className="ancarlink" to="/github">Github</NavLink></li>
         <li><NavLink className="ancarlink" to="/skills">Skills</NavLink></li>
         <li><NavLink className="ancarlink" to="/contact">Contact</NavLink></li>
-        <li><a className="ancarlink" href="../images/Shubham_Muddamwar-Resume.pdf" download >Resume</a></li>
-        <div className="bx bx-moon" id="darkmode"></div>
+        <li><a className="ancarlink" href={Resume} download >Resume <FontAwesomeIcon icon={faDownload} /></a></li>
     </ul>
   </header>
   )

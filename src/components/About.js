@@ -1,5 +1,6 @@
 import React from "react"
 import codingImage from "../images/coding.gif"
+import Resume from "../images/Shubham_Muddamwar_Resume.pdf"
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
             collaborative development and effective version control with Git.
           </h5>
           <a
-            href="./images/Shubham-Muddamwar-Resume.pdf"
+            href={Resume}
             value="download"
             target="_blank"
             className="btn"
