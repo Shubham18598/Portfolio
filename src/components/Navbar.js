@@ -36,7 +36,7 @@ const Navbar = () => {
         <li><NavLink className="ancarlink" to="/github">Github</NavLink></li>
         <li><NavLink className="ancarlink" to="/skills">Skills</NavLink></li>
         <li><NavLink className="ancarlink" to="/contact">Contact</NavLink></li>
-        <li><a className="ancarlink" href={Resume} download >Resume <FontAwesomeIcon icon={faDownload} /></a></li>
+        <li><a className="ancarlink"  download >Resume <FontAwesomeIcon icon={faDownload} /></a></li>
     </ul>
   </header>
   )
